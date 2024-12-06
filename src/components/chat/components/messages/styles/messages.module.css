@@ -1,0 +1,39 @@
+.messages_wrapper {
+    background-color: var(--color-one);
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages_container {
+    width: calc(100% - 25px);
+    height: calc(100% - 25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-two);
+}
+
+.messages_contact_text_indicator {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: var(--color-four);
+}
+
+.messages_content_wrapper {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+}

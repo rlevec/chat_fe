@@ -1,0 +1,16 @@
+.description_container {
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 412px;
+}
+
+.description_content {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-four);
+}

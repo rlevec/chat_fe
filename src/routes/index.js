@@ -1,0 +1,38 @@
+export const routes = {
+  client: {
+    root: "/",
+    login: "/login",
+    registration: "/registration",
+    forgot_password: "/forgot_password",
+    reset_password: "/reset_password",
+    account_activation: "/account_activation",
+    resend_account_activation_email: "/resend_account_activation_email",
+    chat: "/chat",
+    change_password: "/change_password",
+    delete_account: "/delete_account",
+    change_email: "/change_email",
+    change_username: "/change_username",
+    terms_of_use: "/terms_of_use",
+    privacy_policy: "/privacy_policy",
+    upload_profile_picture: "/upload_profile_picture"
+  },
+  server: {
+    root: "http://localhost:3060/api",
+    login: "/login",
+    registration: "/registration",
+    forgot_password: "/forgot_password",
+    reset_password: "/reset_password",
+    account_activation: "/account_activation",
+    resend_account_activation_email: "/resend_account_activation_email",
+    chat: "/chat",
+    change_password: "/change_password",
+    delete_account: "/delete_account",
+    change_email: "/change_email",
+    change_username: "/change_username",
+    logout: "/logout",
+    terms_of_use: "/terms_of_use",
+    privacy_policy: "/privacy_policy",
+    upload_profile_picture: "/upload_profile_picture",
+    error: "/error"
+  },
+};

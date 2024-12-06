@@ -1,0 +1,42 @@
+.inputs_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25px;
+}
+
+.inputs_filters_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+}
+
+.inputs_filter_button_container {
+    width: auto;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs_filter_button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--color-two);
+    border: none;
+    padding: 3.25px;
+}
+
+
+.inputs_filter_button_active {
+    background-color: var(--color-four);
+}

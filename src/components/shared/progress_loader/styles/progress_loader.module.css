@@ -1,0 +1,23 @@
+.progress_loader{
+    display: block;
+    position: relative;
+    height: 12.5px;
+    width: 300px;
+    border: 1px solid var(--color-four);
+    overflow: hidden;
+  }
+  .progress_loader:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: var(--color-three);
+    animation: 3s prog ease-in infinite;
+  }
+  
+  @keyframes prog {
+    to  {   width: 100%;}
+  }
+  

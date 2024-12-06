@@ -1,0 +1,39 @@
+.error_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-two);
+}
+
+.error_container {
+     width: auto;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 25px;
+     flex-direction: column;
+}
+
+.error_header {
+    color: var(--color-four);
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.error_button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    background-color: var(--color-three);
+    color: var(--color-four);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

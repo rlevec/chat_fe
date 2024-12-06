@@ -1,0 +1,135 @@
+.inputs_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.inputs_container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.inputs_input_fields_container {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.inputs_input_field {
+    width: 325px;
+    padding: 12.5px 42.5px;
+    background-color: var(--color-one);
+    color: var(--color-four);
+    font-size: 16px;
+    border: 1px solid transparent;
+
+    &::placeholder {
+        color: rgba(32, 52, 96, 0.5);
+      }
+    
+      &:focus {
+        outline: none;
+      }
+    
+      &:-webkit-autofill {
+        background-color: var(--color-one) !important;
+        -webkit-box-shadow: 0 0 0 50px var(--color-one) inset;
+      }
+}
+
+.inputs_input_field_error {
+    border: 1px solid var(--color-six);
+
+    color: var(--color-six);
+
+    &::placeholder {
+        color: var(--color-six);
+      }
+    
+}
+
+.inputs_input_field_icon_container {
+    position: absolute;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 10px;
+}
+
+
+
+.inputs_input_field_validation_message {
+    position: absolute;
+    font-size: 8px;
+    background: var(--color-six);
+    color: var(--color-two);
+    padding: 3.5px;
+    width: calc(100% - 7px);
+    font-weight: 600;
+    top: 100%;
+    text-align: center;
+}
+
+.inputs_input_field_password_type_icon_container {
+    position: absolute;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+.inputs_form_terms_field_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12.5px;
+    position: relative;
+}
+
+.inputs_terms_field_labels_container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25px;
+}
+
+
+
+.inputs_terms_field_label_with_link {
+    color: var(--color-three);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.inputs_terms_field {
+    width: 25px;
+    height: 25px;
+    accent-color:var(--color-four);
+    cursor: pointer;
+}
+
+.inputs_terms_field_error {
+    box-shadow: 0px 0px 12.5px 3.125px var(--color-six);   
+  }

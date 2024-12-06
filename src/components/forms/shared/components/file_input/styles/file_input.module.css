@@ -1,0 +1,110 @@
+.file_input_wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file_input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file_input_replacement_label {
+    background-color: var(--color-two);
+    border: 2.5px solid var(--color-four);
+    width: 412px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 50px;
+
+    &:hover {
+        background-color: var(--color-three);
+    }
+}
+
+.file_input_replacement_label_indicators {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12.5px;
+}
+
+.file_input_replacement_label_accepted_formats {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:var(--color-four);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.file_input_replacement_label_file_size_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25px;
+}
+
+
+.file_input_replacement_label_file_size_value,
+.file_input_replacement_label_file_size_label {
+    font-weight: 600;
+    color:var(--color-four);
+    text-align: center;
+    height: auto;
+    font-size: 14px;
+}
+
+
+.file_input_image_container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid var(--color-four);
+    position: relative;
+}
+
+.file_input_image {
+    width: 412px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+
+.file_input_delete_preview_container {
+    width: 30px;
+    height: 30px;
+    border: 2.5px solid var(--color-four);
+    background-color: var(--color-two);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: 6.25px;
+    right: 6.25px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-six);
+    }
+}

@@ -1,0 +1,51 @@
+.fetch_indicator_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-one);
+    position: relative;
+    flex-direction: column; 
+    gap: 25px;
+}
+
+.fetch_indicator_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-four);
+    letter-spacing: 1px;
+}
+
+.fetch_indicator_subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-four);
+}
+
+.fetch_indicator_redirect {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-four);
+    text-decoration: underline;
+}
+
+.fetch_indicator_button {
+    padding: 12.5px 50px;
+    border: none;
+    background-color: var(--color-three);
+    color: var(--color-four);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    &:hover {
+        background-color: var(--color-four);
+        color: var(--color-three);
+    }
+}

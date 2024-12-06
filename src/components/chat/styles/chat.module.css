@@ -1,0 +1,22 @@
+.chat_wrapper {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.chat_disable_pointer_events {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.chat_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

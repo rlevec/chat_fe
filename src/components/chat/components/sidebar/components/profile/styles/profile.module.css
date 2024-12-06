@@ -1,0 +1,134 @@
+.profile_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+
+.connection_indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-seven);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+.sidebar_header_settings_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.sidebar_user_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar_user_profile_container {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: var(--color-four);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid var(--color-two); 
+    position: relative;
+}
+
+.sidebar_user_edit_image_container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 102.5px;
+    background: var(--color-two);
+    border: 3.125px solid var(--color-four);
+    cursor: pointer;
+}
+
+.sidebar_user_profile_image_container img {
+    border-radius: 50%;
+}
+
+.sidebar_user_profile_no_image_container {
+   color: var(--color-one);
+   font-size: 24px;
+   text-transform: capitalize;
+}
+
+
+.sidebar_user_profile_image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar_user_info_settings_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar_user_info_container {
+    width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 6.25px;
+   border-right: 1.25px solid var(--color-two);
+   border-bottom: 2.5px solid var(--color-two);
+}
+
+.sidebar_user_settings_container {
+    width: 100%;
+    height: 50px;
+    border-left: 1.25px solid var(--color-two);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2.5px solid var(--color-two);
+}
+
+.sidebar_user_settings_container img {
+   cursor: pointer;
+}
+
+.sidebar_user_info_username {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-four);
+}

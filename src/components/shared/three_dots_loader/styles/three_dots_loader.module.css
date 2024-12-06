@@ -1,0 +1,27 @@
+.three_dots_loader {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    background: var(--color-three); /* Default background color set to color-three */
+    box-shadow: -24px 0 var(--color-three), 24px 0 var(--color-three); /* Default shadow color set to color-three */
+    box-sizing: border-box;
+    animation: shadowPulse 3s linear infinite; /* Animation for pulsing effect */
+}
+
+@keyframes shadowPulse {
+    33% {
+        background: var(--color-three); /* Background remains color-three */
+        box-shadow: -24px 0 var(--color-four), 24px 0 var(--color-three); /* Left dot changes to color-four */
+    }
+    66% {
+        background: var(--color-four); /* Background changes to color-four */
+        box-shadow: -24px 0 var(--color-three), 24px 0 var(--color-three); /* Shadow remains color-three */
+    }
+    100% {
+        background: var(--color-three); /* Background resets to color-three */
+        box-shadow: -24px 0 var(--color-three), 24px 0 var(--color-four); /* Right dot changes to color-four */
+    }
+}

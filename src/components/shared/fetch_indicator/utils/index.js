@@ -1,0 +1,1 @@
+export const handleTitleAction = (component) => component?.split("_")?.join(" ")

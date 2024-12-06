@@ -1,0 +1,136 @@
+.list_wrapper {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: rgba(32, 52, 96, 0.25);
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-four);
+        border-radius: 0;
+    }
+}
+
+
+.list_no_contacts_container {
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.list_no_contacts_content {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-four);
+}
+
+.list_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list_content_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px; /* Adequate spacing */
+    height: 75px;
+    background-color: var(--color-two); /* Light background for regular state */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-left: 6.25px solid var(--color-two);
+}
+
+.selected {
+    background-color: var(--color-one); /* Light background for selected state */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+    border-left: 6.25px solid var(--color-three); /* Accent border for selection */
+}
+
+.list_content_image_container {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: var(--color-five); /* Background color for the image container */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-four); /* Contrast border */
+    cursor: pointer;
+}
+
+.list_content_no_image {
+    color: var(--color-one); /* Text color when there's no image */
+    font-size: 20px; /* Font size */
+    text-transform: uppercase; /* Ensure it's styled uniformly */
+}
+
+.list_content_user_indicator_container {
+    width: 160px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.list_content_indicator {
+    font-weight: 400;
+    letter-spacing: 0.5px; /* Subtle letter spacing for readability */
+    font-size: 12px;
+    color: var(--color-eight); /* Use color eight for subtler text */
+}
+
+.list_content_username {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--color-four); /* Username color */
+}
+
+.list_content_user_connection_indicator {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-four); /* User connection color */
+}
+
+.online {
+    color: var(--color-seven); /* Green for online status */
+}
+
+.offline {
+    color: var(--color-six); /* Red for offline status */
+}
+
+.list_content_actions_container {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list_content_action_icon_container {
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-four); /* Icon default color */
+}
+
+.list_content_action_icon_container.selected {
+    color: var(--color-three); /* Change icon color for selected state */
+}

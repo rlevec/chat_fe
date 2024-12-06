@@ -1,0 +1,26 @@
+:root {
+  --color-one: #eee;    
+  --color-two: #fff;       
+  --color-three: #ff8400;       
+  --color-four: #203460;         
+  --color-five: #2f4e92;
+  --color-six: #d50000;
+  --color-seven: #007f00;
+  --color-eight: #a3b1c6;
+}
+  
+
+  body {
+    background-color: var(--background-color);
+    color: var(--message-text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  

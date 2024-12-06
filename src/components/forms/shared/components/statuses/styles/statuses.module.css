@@ -1,0 +1,35 @@
+.statuses_wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12.5px;
+}
+
+.statuses_status_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25px;
+}
+
+.statuses_status_label {
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+    color: var(--color-four);
+}
+
+
+.statuses_status_label_with_link {
+    width: fit-content;
+    height: fit-content;
+    color: var(--color-three);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}

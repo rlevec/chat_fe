@@ -1,0 +1,95 @@
+.sidebar_header_add_contact_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6.25px;
+}
+
+.sidebar_header_add_contact_input_button_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.sidebar_header_add_contact_input {
+    width: 100%;
+    padding: 0 12.5px 0 42.5px;
+    height: 50px;
+    background-color: var(--color-two);
+    color: var(--color-four);
+    font-size: 16px;
+    border: 1px solid transparent;
+
+    &::placeholder {
+        color: rgba(32, 52, 96, 0.5);
+      }
+    
+      &:focus {
+        outline: none;
+      }
+    
+      &:-webkit-autofill {
+        background-color: var(--color-two) !important;
+        -webkit-box-shadow: 0 0 0 50px var(--color-two) inset;
+      }
+
+      &::-webkit-search-cancel-button {
+        padding: 6.25px;
+        cursor: pointer;
+      }
+}
+
+.sidebar_header_add_contact_error_border {
+    border: 1px solid var(--color-six);
+}
+
+
+
+.sidebar_header_add_contact_input_icon_container {
+    position: absolute;
+    left: 12.5px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sidebar_header_add_contact_button_container {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 12.5px;
+
+}
+
+.sidebar_header_add_contact_button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: var(--color-four);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+}

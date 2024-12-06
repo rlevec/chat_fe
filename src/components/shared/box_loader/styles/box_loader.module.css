@@ -1,0 +1,24 @@
+.box_loader {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    color: var(--color-four); /* Using the defined variable for color */
+    border: 1px solid var(--color-four); /* Border color will match the text color */
+    box-sizing: border-box;
+    animation: fillReset 3s linear infinite alternate; /* Animation for filling and resetting */
+    background: transparent; /* Set background to transparent */
+    overflow: hidden; /* Ensure the filling effect doesn't overflow */
+}
+
+@keyframes fillReset {
+    0% {
+        box-shadow: 0 0 0 var(--color-four) inset; /* Start with no inset shadow */
+    }
+    50% {
+        box-shadow: 0 -48px 0 0 var(--color-four) inset; /* Fill from bottom to top */
+    }
+    100% {
+        box-shadow: 0 0 0 var(--color-four) inset; /* Reset the fill */
+    }
+}

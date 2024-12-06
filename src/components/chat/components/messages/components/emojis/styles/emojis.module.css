@@ -1,0 +1,116 @@
+/* Wrapper for the entire emoji component */
+.emojis_wrapper {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  background-color: var(--color-one); /* Main container background */
+  bottom: 100px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px; /* Add padding for aesthetics */
+  border: 2.5px solid var(--color-four);
+}
+
+/* Container for scrolling emoji categories */
+.emojis_container {
+  height: 100%;
+  width: 100%;
+  padding-right: 10px; /* Add padding for scroll space */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-dark) transparent; /* Style scrollbar */
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(32, 52, 96, 0.25);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-four);
+    border-radius: 0;
+}
+}
+
+
+
+.emojis_category_title_filter_icons_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2.5px solid var(--color-four);
+}
+
+.emojis_filter_icons_container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12.5px;
+}
+
+.emojis_filter_icon_container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emojis_filter_icon {
+   font-size: 25px;
+   color: var(--color-four);
+}
+
+.emojis_category_title{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+  color: var(--color-four);
+}
+
+/* Categories container */
+.emojis_categories_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.25px; /* Space between categories */
+  border-bottom: 1px solid var(--color-light); /* Separator between categories */
+}
+
+/* Subcategories container */
+.emojis_subcategories_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* Space between emoji items */
+  justify-content: flex-start;
+  
+}
+
+
+
+/* Emoji item styling */
+.emoji {
+  font-size: 1.5rem; /* Emoji size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px; /* Equal width for emojis */
+  height: 36px; /* Equal height for emojis */
+  background-color: var(--color-light); /* Background color for emoji tile */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.25);
+    background-color: var(--color-primary);
+  }
+}

@@ -1,0 +1,41 @@
+/* notifications.module.css */
+.notifications_wrapper {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 350px; 
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+.notifications_container {
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notifications_content {
+    flex-grow: 1; /* Take available space */
+    color: var(--color-four);
+}
+
+.notifications_wrapper.error {
+    border-left: 5px solid var(--color-six);
+    background-color: var(--color-two);
+}
+
+.notifications_wrapper.success {
+    border-left: 5px solid var(--color-seven);
+    background-color: var(--color-two);
+}
+
+.close_btn {
+    background: none;
+    border: none;
+    color: var(--color-five);
+    font-size: 20px;
+    cursor: pointer;
+}
